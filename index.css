@@ -1,0 +1,196 @@
+/* โค๊ดอาจจะงงๆ แต่ให้เวลาผมหน่อยนะครับ ^__^ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+* a{
+    text-decoration: none;
+    color: grey;
+    font-size: .725rem;
+}
+* li{
+    list-style: none;
+}
+body{
+    background-color: #e5e5e5;
+}
+header{
+    background-color: #fff;
+    padding: 5px 0;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic; 
+    padding-bottom: 5px;
+}
+.container{
+    display: flex;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar1{
+    display: flex;
+    align-items: center;
+}
+.navbar2{
+    display: flex;
+}
+.navbar2 a{
+    margin-right: 20px;
+    font-size: 0.8rem;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-left: 20px;
+}
+.bar{
+    display: none;
+}
+
+.bodycontainer{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: grey;
+    height: 500px;
+    width: 70%;
+    margin: 50px auto;
+}
+.leftcontent{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.leftitem{
+    margin-bottom: 20px;
+    height: 100%;
+}
+.transection{
+    padding-left: 20px;
+    width: 75%;
+    height: 100%;
+}
+.item{
+    background-color: #fff;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: .9rem;
+    line-height: 1.8;
+}
+table{
+    margin: 0 auto;
+    padding-top: 20px;
+    border-collapse: separate;
+    border-spacing: 50px .5em;
+}
+
+@media screen and (max-width:1060px) {
+    .bar{
+        display: flex;
+        padding-top: 3px;
+    }
+    nav{
+        position: absolute;
+        margin-left: 70%;
+        background-color: #fff;
+        margin-top: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    } 
+    nav ul li{
+        padding: 15px 20px;
+        margin: 0;
+    }
+    nav ul li:hover{
+        background-color: aquamarine;
+    }
+    .show{
+        display: flex;
+    }
+    .bodycontainer{
+        display: block;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        flex-direction: column;
+        color: grey;
+        height: 500px;
+        width: 70%;
+        margin: 50px auto;
+    }
+    .transection{
+        padding-left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    table{
+        margin: 0 auto;
+        padding-top: 20px;
+        border-collapse: separate;
+        border-spacing: 0px .5em;
+    }
+    .transection{
+        padding-left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .item{
+    background-color: #fff;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: .9rem;
+    line-height: 1.8;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    .bar{
+        display: flex;
+        padding-top: 3px;
+    }
+    nav{
+        position: absolute;
+        margin-left: 50%;
+        background-color: #fff;
+        margin-top: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    } 
+    nav ul li{
+        padding: 15px 20px;
+        margin: 0;
+    }
+    nav ul li:hover{
+        background-color: aquamarine;
+    }
+}
